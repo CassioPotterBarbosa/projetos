@@ -16,23 +16,25 @@ header{
     margin: 3px;
     flex: 1 1 100vw;
     background-color: gray;
+    height: 100px;
 }
 nav{
     display: flex;
     margin: 3px;
-    flex: 1 1 100vw;
+    flex: 1 1 200px;
     background-color: gray;
 }
 main{
     display: flex;
     margin: 3px;
-    flex: 1 1 100vw;
+    flex: 20 1 500px;
     background-color: gray;
+    height: calc(100vh - 224px);
 }
 aside{
     display: flex;
     margin: 3px;
-    flex: 1 1 100vw;
+    flex: 1 1 200px;
     background-color: gray;
 }
 footer{
@@ -40,4 +42,5 @@ footer{
     margin: 3px;
     flex: 1 1 100vw;
     background-color: gray;
+    height: 100px;
 }
