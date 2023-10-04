@@ -18,6 +18,16 @@
             border: 2px solid black;
             text-align: center;
             position: absolute;
+            
+        }
+        #hora{
+            display: grid;
+            align-content: end;
+            justify-content: end;
+        }
+        main{
+            height: 250px;
+            background-color: aquamarine;
         }
     </style>
 </head>
@@ -30,7 +40,7 @@
             </h1>
 
         </header>
-        <main>
+        <main id="main">
             <h2>
                 Digite o nome da cidade.
             </h2>
@@ -40,12 +50,38 @@
         </main>
         <footer>
             <div id="res">
-
+            </div>
+            <div id="hora">
+                <p>
+                    hora
+                </p>
             </div>
         </footer>
     </div>
     <script>
+        var main = document.getElementById("main")
+        var data = new Date()
+        var res = document.getElementById("hora")
 
+        var h = data.getHours()
+        var m = data.getMinutes()
+
+        res.innerHTML=(`${h}:${m}`)
+        
+        
+        if( h > 6){
+            main.style.background = "#00CED1"
+        }
+        if(h > 10){
+            main.style.background = "#4682B4"
+        }
+        if( h > 18){
+                main.style.background = "#5F9EA0"
+            }
+        if(h > 20){
+            main.style.background = "#696969"
+        }
+        
     </script>
 
 </body>
