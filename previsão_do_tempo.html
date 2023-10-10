@@ -62,7 +62,7 @@
     </div>
     <script>
 
-        setTimeout(function() { location. reload(); }, 10000)
+        
 
         const key = "4d73f87e6b2364fd7423d8e702c559e4"
         
@@ -73,6 +73,12 @@
         var m = data.getMinutes()
 
         res.innerHTML=(`${h}:${m}`)
+
+        function pesq(){
+            const cidade = document.getElementById("nome").value
+            const dados = fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${key}`).then(resposta => resposta.json())
+            console.log(dados)
+        }
         
         
         
