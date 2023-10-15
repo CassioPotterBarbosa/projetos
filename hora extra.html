@@ -9,6 +9,7 @@
         body {
             display: flex;
             justify-content: center;
+            margin: 1px;
         }
         #tudo{
             width: 350px;
@@ -20,11 +21,11 @@
             height: 150px;
         }
         main{
-            height: 200px;
+            height: 150px;
             background-color: antiquewhite;
         }
         footer{
-            height: 100px;
+            height: 150px;
             background-color: aquamarine;
         }
     </style>
@@ -42,14 +43,14 @@
             var umahora = salariocomcin/220
             var horaextra = umahora*hora
             var extratotal = sala+horaextra 
+            var des = extratotal-(extratotal/100*11)
             
 
             ressal.innerHTML=(sala)
             reshor.innerHTML=(hora)
-
-            alert(salariocomcin)
-            alert(umahora)
-            alert(extratotal)
+            restothor.innerHTML=(extratotal)
+            comdes.innerHTML=(des.toFixed(2))
+            
 
         }
         function set(){
@@ -66,15 +67,14 @@
             var umahora = salariocomcin/220
             var horaextra = umahora*hora
             var extratotal = sala+horaextra 
+            var des = extratotal-(extratotal/100*11)
             
 
             ressal.innerHTML=(sala)
             reshor.innerHTML=(hora)
-
-            alert(salariocomcin)
-            alert(umahora)
-            alert(extratotal)
-
+            restothor.innerHTML=(extratotal)
+            comdes.innerHTML=(des.toFixed(2))
+            
         }
         function cem(){
             
@@ -89,14 +89,14 @@
             var umahora = salariocomcin/220
             var horaextra = umahora*hora
             var extratotal = sala+horaextra 
+            var des = extratotal-(extratotal/100*11)
             
 
             ressal.innerHTML=(sala)
             reshor.innerHTML=(hora)
-
-            alert(salariocomcin)
-            alert(umahora)
-            alert(extratotal)
+            restothor.innerHTML=(extratotal)
+            comdes.innerHTML=(des.toFixed(2))
+            
 
         }
     </script>
@@ -130,14 +130,18 @@
                 Quantidade de horas
             </p>
             <div id="reshor"></div>
+           
+
+        </main>
+        <footer>
             <p>
                 Vai dar
             </p>
             <div id="restothor"></div>
-
-        </main>
-        <footer>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            <P>
+                Com desconto talves de
+            </P>
+            <div id="comdes"></div>
         </footer>
     </div>>
 </body>
