@@ -54,10 +54,49 @@
         }
         function set(){
             alert("75%")
+            alert("50%")
+            var sal = document.getElementById("sal")
+            var hor = document.getElementById("hor")
+            var ressal = document.getElementById("ressal")
+            var reshor = document.getElementById("reshor")
+            var sala = Number(sal.value)
+            var hora = Number(hor.value)
+            
+            var salariocomcin = sala+(sala/100*75)
+            var umahora = salariocomcin/220
+            var horaextra = umahora*hora
+            var extratotal = sala+horaextra 
+            
+
+            ressal.innerHTML=(sala)
+            reshor.innerHTML=(hora)
+
+            alert(salariocomcin)
+            alert(umahora)
+            alert(extratotal)
 
         }
         function cem(){
-            alert("100%")
+            
+            var sal = document.getElementById("sal")
+            var hor = document.getElementById("hor")
+            var ressal = document.getElementById("ressal")
+            var reshor = document.getElementById("reshor")
+            var sala = Number(sal.value)
+            var hora = Number(hor.value)
+            
+            var salariocomcin = sala+(sala/100*100)
+            var umahora = salariocomcin/220
+            var horaextra = umahora*hora
+            var extratotal = sala+horaextra 
+            
+
+            ressal.innerHTML=(sala)
+            reshor.innerHTML=(hora)
+
+            alert(salariocomcin)
+            alert(umahora)
+            alert(extratotal)
 
         }
     </script>
